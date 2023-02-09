@@ -6,6 +6,8 @@ const EditPokemonForm = ({ pokemon, hideForm }) => {
   const pokeTypes = useSelector(state => state.pokemon.types);
   const dispatch = useDispatch();
 
+  console.log(pokemon)
+
   const [number, setNumber] = useState(pokemon.number);
   const [attack, setAttack] = useState(pokemon.attack);
   const [defense, setDefense] = useState(pokemon.defense);
